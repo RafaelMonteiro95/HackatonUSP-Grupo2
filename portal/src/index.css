@@ -1,0 +1,26 @@
+.wrap {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.tabs .tab a{
+    color:#ffb300;
+}
+
+.tabs .tab a:hover,.tabs .tab a.active {
+	background-color:transparent;
+	color:#ffb300;
+}
+
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color:#ffb300;	
+}
+
+.tabs .indicator {
+	background-color:#ffb300;
+}
