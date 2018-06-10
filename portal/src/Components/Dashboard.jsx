@@ -8,7 +8,7 @@ export default class Dashboard extends React.Component{
 		return(
 			<div>
 				<Row className="center">
-					<h5>Olá, professor!</h5>
+					{/*<h2>Olá, professor!</h2>*/}
 				</Row>
 				<Tabs className="z-depth-1">
 					<Tab title="Dados Gerais" active>
@@ -50,7 +50,7 @@ const DadosGerais = () => (
 );
 
 const Avisos = () => (
-	<div>
+	<div style={{paddingTop: '10px'}}>
 		<Col s={12} m={12} l={12} className="center">
 			<Row><Col s ={8} m={8} l={8} offset="s4 m4 l4">
 				<Input s={6} m={6} l={6} label="Assunto"/>

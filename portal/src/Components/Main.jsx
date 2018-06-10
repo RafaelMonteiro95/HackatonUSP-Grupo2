@@ -12,7 +12,7 @@ class Main extends Component {
 		    	<header>
 		    		<Menu/>
 	    		</header>
-		    	<main>
+		    	<main style={{width: '70%'}} className='container'>
 		    		<Route exact path="/dashboard" component={Dashboard} />
 		    	</main>
 		    	<footer>
@@ -24,9 +24,17 @@ class Main extends Component {
   }
 }
 
+class ResponsiveLogo extends Component {
+	render() {
+		return(
+			<NavLink to='/'> <img id='logo' src='stu_very_large.png' alt="Loading" style={{maxHeight: '100px'}}/> </NavLink>
+		);
+	}
+}
+
 const Menu = () => (
-	<Navbar className="cyan darken-1" brand='HackathonUSP' left	>
-		<NavItem><NavLink exact to="/dashboard">Dashboard</NavLink></NavItem>
+	<Navbar className="cyan darken-1" brand={<ResponsiveLogo/>} style={{height: '100px'}}>
+		{/*<NavLink exact to="/dashboard"><NavItem>Dashboard</NavItem></NavLink>*/}
 	</Navbar>
 );
  
