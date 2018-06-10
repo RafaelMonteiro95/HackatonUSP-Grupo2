@@ -33,3 +33,12 @@ main {
    border-bottom: 1px solid #ffb300  !important;
    box-shadow: 0 1px 0 0 #ffb300  !important
  }
+
+ .card.large {
+ 	height: 100%;
+ }
+
+/*
+ div .chip{
+ 	background-color: 'lightgreen' @important
+ }*/
