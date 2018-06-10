@@ -99,13 +99,13 @@ const Ranking = () => (
       <p>Avaliação média: 9.0</p>
       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
     </li>
-    <li class="collection-item">
+    <li class="collection-item avatar">
       <span class="title">Professor #4</span>
       <p>Instituto Z</p>
       <p>Avaliação média: 8.7</p>
       <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
     </li>
-    <li class="collection-item">
+    <li class="collection-item avatar">
       <span class="title">Professor #5</span>
       <p>Instituto A</p>
       <p>Avaliação média: 8.5</p>
