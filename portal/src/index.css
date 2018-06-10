@@ -25,7 +25,7 @@ main {
 	background-color:#ffb300;
 }
 
- .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+ .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label,  option {
    color: #ffb300  !important;
  }
  /* label underline focus color */

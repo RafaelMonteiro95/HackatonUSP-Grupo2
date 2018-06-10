@@ -1,4 +1,5 @@
 import React from 'react';
+import { BarGraphic, LineGraphic } from './ChartComponent';
 import { Button, Card, Row, Col, Tabs, Tab, Input } from 'react-materialize';
 
 export default class Dashboard extends React.Component{
@@ -29,6 +30,7 @@ const DadosGerais = () => (
 			<Card className="large"
 				title="Última Avaliação"
 			>
+				<BarGraphic/>
 			</Card>
 		</Col>
 		<Col s={12} m={4}>
@@ -41,6 +43,7 @@ const DadosGerais = () => (
 			<Card className="large"
 				title="Progresso da Disciplina"
 			>
+				<LineGraphic/>
 			</Card>
 		</Col>
 	</div>
