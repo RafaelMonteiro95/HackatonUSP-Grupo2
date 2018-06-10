@@ -1,6 +1,6 @@
 import React from 'react';
 import { BarGraphic, LineGraphic } from './ChartComponent';
-import { Button, Card, Row, Col, Tabs, Tab, Input } from 'react-materialize';
+import { Button, Card, Collection, CollectionItem, Row, Col, Tabs, Tab, Input } from 'react-materialize';
 
 export default class Dashboard extends React.Component{
 
@@ -16,6 +16,9 @@ export default class Dashboard extends React.Component{
 					</Tab>
 					<Tab title="Avisos">
 						<Avisos/>
+					</Tab>
+					<Tab title="Ranking Geral">
+						<Ranking/>
 					</Tab>
 				</Tabs>	
 			</div>
@@ -71,4 +74,42 @@ const Avisos = () => (
 			</Row>
 		</Col>
 	</div>
+);
+
+const Ranking = () => (
+ <Collection>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Professor #1</span>
+      <p>Instituto X</p> 
+      <p>Avaliação média: 9.8</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Professor #2</span>
+      <p>Instituto Y</p>
+      <p>Avaliação média: 9.5</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Professor #3</span>
+      <p>Instituto Z</p>
+      <p>Avaliação média: 9.0</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <span class="title">Professor #4</span>
+      <p>Instituto Z</p>
+      <p>Avaliação média: 8.7</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <span class="title">Professor #5</span>
+      <p>Instituto A</p>
+      <p>Avaliação média: 8.5</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </Collection>	
 );
